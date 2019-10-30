@@ -10,36 +10,35 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/app-working.js"></script>
+    <style>
+    body{
+	    font-size: 20px;
+	    font-family: sans-serif;
+	    color: #333;
+    }
+    .question{
+	    font-weight: 600;
+    }
+  .answers {
+    margin-bottom: 20px;
+  }
+
+  #submit:hover{
+	  background-color: #3a8;
+  }
+    </style>
 </head>
 <body>
     <div class="jumbotron">
+        <h1>How much you know about Viticulture?</h1>
         <div><h3>Time left: </3>
             <span id="timer"></span>
         </div>
-        <p>Question # 1</p>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="correct">
-            <label class="form-check-label" for="inlineRadio1">Option # 1</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="">
-            <label class="form-check-label" for="inlineRadio2"> Option #2</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="">
-            <label class="form-check-label" for="inlineRadio3">Option #3</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="">
-            <label class="form-check-label" for="inlineRadio3">3Option #4</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="">
-            <label class="form-check-label" for="inlineRadio3">Option #5</label>
-          </div>
-          <br/>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div> 
+
+        <div id="quiz"></div>
+        <div id="results"></div>
+
+        <a id="submit" class="btn btn-primary btn-lg  href="#" role="button">Get Results</a>
 </body>
 </html>
